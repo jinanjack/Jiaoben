@@ -1,3 +1,7 @@
+[rewrite_local]
+https://api.alohaprofile.com/v1/profile_info url script-response-body 
+[mitm]
+hostname = api.alohaprofiel.com
 var body = $response.body;
 var obj = JSON.parse(body);
 
