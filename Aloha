@@ -2,6 +2,8 @@
 https://api.alohaprofile.com/v1/profile_info url script-response-body https://raw.githubusercontent.com/jinanjack/Jiaoben/refs/heads/main/Aloha   
 [mitm]
 hostname = api.alohaprofile.com
+*
+*/
 var body = $response.body;
 var obj = JSON.parse(body);
 
