@@ -1,5 +1,5 @@
 [rewrite_local]
-https://api.alohaprofile.com/v1/profile_info url script-response-body 
+^https:\/\/api\.alohaprofile\.com\/v1\/profile_info url script-response-body https://raw.githubusercontent.com/jinanjack/Jiaoben/refs/heads/main/Aloho   
 [mitm]
 hostname = api.alohaprofiel.com
 var body = $response.body;
