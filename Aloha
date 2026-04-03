@@ -1,13 +1,13 @@
 [rewrite_local]
 https://api.alohaprofile.com/v1/profile_info url script-response-body https://raw.githubusercontent.com/jinanjack/Jiaoben/refs/heads/main/Aloha   
 [mitm]
-hostname = api.alohaprofiel.com
+hostname = api.alohaprofile.com
 var body = $response.body;
 var obj = JSON.parse(body);
 
 obj.profile.is_premium = true,
-obj.profile.end_of_premium = 1883639265,
-obj.profile._end_of_premium = "2029-09-09 17:07:45"
+obj.profile.end_of_premium = 4099665600,
+obj.profile._end_of_premium = "2099-09-09 17:07:45"
 
 
 body = JSON.stringify(obj);
